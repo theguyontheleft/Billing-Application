@@ -25,16 +25,17 @@ http://qt-project.org/doc/qt-4.8/installation.html
 * To install QT on a Linux OS the following terminal instruction 
 will download everything needed.
 Be warned it is a massive download (174 MB):
-$ sudo apt-get install qt-sdk
+
+        $ sudo apt-get install qt-sdk
 
 INSTRUCTIONS:
 =======================================
-Building the project
-* From the terminal once in the project directory run the 
-following commands to make and build the project:
-$ qmake -project
-$ qmake
-$ make
+* From the terminal once in the project directory run the following commands to make and build the project:
+
+        $ qmake -project
+		$ qmake
+		$ make
+
 * There are some test files to try the project in the TestFiles 
 directory.
 * You can open any of those file with the open button pinned to 
@@ -43,27 +44,29 @@ the quick access toolbar
 pretty straight forward.
 
 * To add a billing the command line argument format is:
-$ ./myBillings –add  –n namespec  –d datespec –s  timespec  –e  timespec
+
+        $ ./myBillings –add  –n namespec  –d datespec –s  timespec  –e  timespec
 
 * To delete a billing entry the command line argument format is:
-$ ./myBillings –del confnumspec
+
+        $ ./myBillings –del confnumspec
 
 * To display a list all of the billings on a certain day the command line argument format is:
-$ ./myBillings –list -d datespec
+
+        $ ./myBillings –list -d datespec
 
 * To display a list all of the billings for a particular name the command line argument format is:
-$ ./myBillings –list -n namespec
+
+        $ ./myBillings –list -n namespec
 
 * To display a list the total time accumulated by each employee in the database the command line argument format is:
-$ ./myBillings –total
 
-Where;
-*  “myBillings” is the name of the program.
+        $ ./myBillings –total
+
+Where
+* “myBillings” is the name of the program.
 * “namespec”  is a string containing the name of the employee
 * “datespec” is the date of which the employee worked
 * “timespec” is the time in the format “hh:mm”. “-s” comes before the time clocked in and “-e” comes before the time clocked out
 * “confnumspec” is the confirmation number of the entry which is in “quotes”.
 * “total” prints out the total time accumulated by each employee in the database
-
-
-
