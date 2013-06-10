@@ -45,28 +45,33 @@ pretty straight forward.
 
 * To add a billing the command line argument format is:
 
-        $ ./myBillings –add  –n namespec  –d datespec –s  timespec  –e  timespec
+        $ ./mybillings –add  –n namespec  –d datespec –s  timespec  –e  timespec
 
 * To delete a billing entry the command line argument format is:
 
-        $ ./myBillings –del confnumspec
+        $ ./mybillings –del confnumspec
 
 * To display a list all of the billings on a certain day the command line argument format is:
 
-        $ ./myBillings –list -d datespec
+        $ ./mybillings –list -d datespec
 
 * To display a list all of the billings for a particular name the command line argument format is:
 
-        $ ./myBillings –list -n namespec
+        $ ./mybillings –list -n namespec
 
 * To display a list the total time accumulated by each employee in the database the command line argument format is:
 
-        $ ./myBillings –total
+        $ ./mybillings –total
+        
+* To display the help menu the command line argument format is:
 
+        $ ./mybillings –h -e -l -p       
+        
 Where
 * “myBillings” is the name of the program.
 * “namespec”  is a string containing the name of the employee
-* “datespec” is the date of which the employee worked
+* “datespec” is the date of which the employee worked in following format: "mm/dd/yy"
 * “timespec” is the time in the format “hh:mm”. “-s” comes before the time clocked in and “-e” comes before the time clocked out
 * “confnumspec” is the confirmation number of the entry which is in “quotes”.
 * “total” prints out the total time accumulated by each employee in the database
+* Every entry should be written inside "quotation marks"
