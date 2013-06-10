@@ -15,6 +15,10 @@ FEATURES:
 * Can list hours for any job number
 * Can list hours for any day or time
 
+NOTES:
+=============
+A testing file has also been uploaded
+
 ADDITIONAL PROGRAMS NEEDED:
 =======================================
 QT
